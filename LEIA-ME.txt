@@ -1,0 +1,38 @@
+Framework utilizado
+
+Spring Boot 1.5.10.RELEASE
+------------------------------------------------
+
+Execução
+Para executar a aplicação, através do console, basta executar o comando
+mvn spring-boot:run na raiz do projeto ou também pode ser executado através de
+uma IDE com suporte pro Maven
+------------------------------------------------
+
+Uso da API
+
+Obter os filmes de cada ano
+http://localhost:8080/piorFilme/vencedor/{ano}
+O {ano} deve ser substituído pelo ano a ser pesquisado. Ex: 2014
+
+Obter o produtor com maior intervalo entre dois prêmios,
+e o que obteve dois prêmios mais rápido
+
+http://localhost:8080/piorFilme/intervalo-premios
+------------------------------------------------
+
+Gerenciador do banco em memória
+
+http://localhost:8080/h2
+
+Saved Settings: Generic H2 (Embedded)
+Setting Name: Generic H2 (Embedded)
+
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:file:~/db
+User Name: sa
+Password:
+
+----------------------------------------------
+
+Os testes de integração estão no pacote test/java/br/com/rest na classe AppTest.java
